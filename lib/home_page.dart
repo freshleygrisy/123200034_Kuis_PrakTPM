@@ -61,17 +61,32 @@ class HomePage extends StatelessWidget {
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Text(
-                      place.title,
-                      style: TextStyle(
-                        fontSize: 18,
-                        fontWeight: FontWeight.bold,
-                        fontStyle: FontStyle.normal,
-                      ),
-                      textAlign: TextAlign.center,
-                    ),
-                  ),
+                      padding: const EdgeInsets.all(8.0),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          Text(
+                            place.title,
+                            style: TextStyle(
+                              fontSize: 18,
+                              fontWeight: FontWeight.bold,
+                              fontStyle: FontStyle.normal,
+                            ),
+                            textAlign: TextAlign.center,
+                          ),
+                          SizedBox(height: 8.0),
+                          Text(
+                            place.author,
+                            style: TextStyle(
+                                fontSize: 16.0, fontStyle: FontStyle.italic),
+                          ),
+                          SizedBox(height: 8.0),
+                          Text(
+                            "Pages   : " + place.pages.toString(),
+                            style: TextStyle(fontSize: 16.0),
+                          ),
+                        ],
+                      )),
                 ],
               ),
             ),

@@ -36,25 +36,25 @@ class _DetailPageState extends State<DetailPage> {
             ),
           ),
           Text(
-            "Judul : " +
+            "Judul    : " +
                 widget.place.title +
                 "\n" +
-                "Penulis : " +
+                "Penulis    : " +
                 widget.place.author +
                 "\n" +
-                "Bahasa :" +
+                "Bahasa     :" +
                 widget.place.language +
                 "\n" +
-                "Negara : " +
+                "Negara     : " +
                 widget.place.country +
                 "\n" +
-                "Jumlah Halaman : " +
+                "Jumlah Halaman     : " +
                 widget.place.pages.toString() +
                 "\n" +
-                "Tahun Terbit : " +
+                "Tahun Terbit     : " +
                 widget.place.year.toString() +
                 "\n" +
-                "Status : " +
+                "Status     : " +
                 (widget.place.isAvailable ? "Tersedia" : "Tidak Tersedia") +
                 "\n",
           ),
